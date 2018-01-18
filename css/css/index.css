@@ -219,3 +219,74 @@ img {
 .parts .parts6 .phone #leshi {
   margin-left: 0;
   float: left; }
+
+.t4 {
+  height: 190px;
+  background: #FFFFFF; }
+  .t4 .kf3 {
+    border: none !important; }
+  .t4 .kf {
+    padding-left: 20px;
+    display: inline-block;
+    width: 380px;
+    height: 113px;
+    margin: 35px 0;
+    border-right: 1px solid #e3e6e9; }
+    .t4 .kf dt {
+      width: 25%;
+      float: left; }
+    .t4 .kf dd {
+      float: left;
+      margin-left: 60px; }
+      .t4 .kf dd p {
+        margin-bottom: 20px; }
+
+.t5 {
+  width: 100%;
+  height: 375px;
+  background: #f5f5f5; }
+  .t5 .w {
+    position: relative; }
+    .t5 .w .w1 {
+      display: inline-block;
+      margin-top: 55px;
+      margin-right: 230px; }
+      .t5 .w .w1 li {
+        margin-bottom: 15px; }
+      .t5 .w .w1 .b {
+        font-weight: bold; }
+    .t5 .w a {
+      color: #333333; }
+  .t5 .ft {
+    margin-top: 20px;
+    margin-bottom: 30px; }
+  .t5 .foot1 {
+    position: absolute;
+    right: 43px;
+    top: 30px; }
+    .t5 .foot1 p {
+      margin-bottom: 20px; }
+
+.t6 {
+  height: 170px;
+  background: #525252; }
+  .t6 .fleft {
+    float: left;
+    padding-top: 35px; }
+    .t6 .fleft a {
+      font-size: 18px;
+      color: #FFFFFF;
+      margin-right: 30px; }
+    .t6 .fleft p {
+      margin-top: 35px;
+      font-size: 14px;
+      color: #cccccc; }
+  .t6 .fright {
+    float: right;
+    padding-top: 35px; }
+    .t6 .fright p {
+      width: 384px;
+      margin-right: 190px;
+      font-size: 16px;
+      color: white;
+      margin-bottom: 15px; }
