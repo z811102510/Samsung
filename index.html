@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <title>中国三星电子&nbsp;官方网上商城</title>
-<link rel="stylesheet" href="css/css/index.css" />
+<link rel="stylesheet" type="text/css" href="css/css/index.css" />
+<link rel="stylesheet" type="text/css" href="css/css/iconfont.css"/>
 </head>
 <body>
 <!--
@@ -14,22 +15,28 @@
 <div class="t1">
 	<div class="content">
 		<a href="#" class="t1left">三星网上商城</a>
-		<a href="#" class="t1right">三星官网</a>
+		<a href="#" class="t1right">三星官网<i class="iconfont icon-share"></i></a>
 	</div>
 </div>
 <div class="t2">
 	<div class="content">
+		<div class="dh">
+		<div class="dhleft">
 		<a href="#">智能手机</a>
 		<a href="#">可穿戴设备</a>
 		<a href="#">个人电脑</a>
 		<a href="#">空气净化器</a>
 		<a href="#">配件</a>
+		</div>
 		<span><a href="#"><img src="img/logo.png"/></a></span>
-		<a href="#">400 071 8899</a>
-		<a href="#">在线客服</a>
-		<a href="#">登录</a>
-		<a href="#">搜</a>
-		<a href="#" id="g" >购</a>
+		<div class="dhright">
+		<a href="#"><i class="iconfont icon-phone"></i>400 071 8899</a>
+		<a href="#"><i class="iconfont icon-icon2"></i>在线客服</a>
+		<a href="#"><i class="iconfont icon-huiyuandenglu"></i>登录</a>
+		<a href="#"><i class="iconfont icon-sousuo"></i></a>
+		<a href="#" id="g" ><i class="iconfont icon-gouwuche"></i></a>
+		</div>
+		</div>
 	</div>
 </div>
 <!--
@@ -207,31 +214,31 @@
 	<div class="content">
 		<div class="kf kf1">
 			<dl>
-				<dt>我是图片</dt>
+				<dt><i class="iconfont icon-dianhua"></i></dt>
 				<dd>
-					<p>我是文字</p>
-					<p>我是文字</p>
-					<p>我是文字</p>
+					<p>致电服务中心</p>
+					<p>400-071-8899</p>
+					<p>周一至周日&nbsp;&nbsp;&nbsp;9:00 - 22:00</p>
 				</dd>
 			</dl>
 		</div>
 		<div class="kf kf2">
 			<dl>
-				<dt>我是图片</dt>
+				<dt><i class="iconfont icon-service"></i></dt>
 				<dd>
-					<p>我是文字</p>
-					<p>我是文字</p>
-					<p>我是文字</p>
+					<p>专业客服人员团队</p>
+					<p>提供当季优惠信息</p>
+					<p>为您推荐产品</p>
 				</dd>
 			</dl>
 		</div>
 		<div class="kf kf3">
 			<dl>
-				<dt>我是图片</dt>
+				<dt><i class="iconfont icon-diamonds"></i></dt>
 				<dd>
-					<p>我是文字</p>
-					<p>我是文字</p>
-					<p>我是文字</p>
+					<p>所售三星品牌产品</p>
+					<p>均为官方正品</p>
+					<p>请放心购买</p>
 				</dd>
 			</dl>
 		</div>
@@ -276,9 +283,11 @@
 		<div class="foot1">
 			<span><p>官方分享</p></span>
 			<span class="footicon">
-				<p>这里有三个小图标</p>
+				<i class="iconfont icon-weibo"></i>
+				<i class="iconfont icon-weixin"></i>
+				<i class="iconfont icon-tengxunweibo1"></i>
 			</span>
-			<span><p>这是盖世乐空间</p></span>
+			<span><p>盖世乐社区</p></span>
 		</div>
 		<div class="ft">	
 			<p >©&nbsp;1995-2016&nbsp;三星（中国）投资有限公司&nbsp;版权所有</p>
@@ -309,4 +318,8 @@
 <script type="text/javascript">
 	 $('.banner').terseBanner();
 	 $('.lb2').terseBanner();
+	 $(".footicon").hover(function(){
+	 	$(".footicon i").css("background","#1D7DB1");
+	 	$(".footicon i").css("border-radius","50%");
+	 })
 </script>
