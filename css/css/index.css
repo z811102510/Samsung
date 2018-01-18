@@ -1,0 +1,221 @@
+@charset "UTF-8";
+body, div, p, ul, ol, li, dl, dt, dd, table, tr, td, th, form, h1, h2, h3, h4, h5, h6, fieldset, figure, hr, img, input {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "微软雅黑",Arial; }
+
+ol, ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+img {
+  border: none; }
+
+.t1 {
+  width: 100%;
+  height: 45px;
+  background: #f2f2f2; }
+
+.t1 a {
+  color: #363636;
+  font-size: 14px; }
+
+.content {
+  margin-left: 10%;
+  margin-right: 10%; }
+
+.t1left {
+  float: left;
+  line-height: 45px; }
+
+.t1right {
+  line-height: 45px;
+  float: right; }
+
+.t2 {
+  width: 100%;
+  height: 64px;
+  position: relative; }
+  .t2 a {
+    display: inline-block;
+    color: #363636;
+    font-size: 20px;
+    margin-right: 20px;
+    line-height: 64px;
+    position: relative; }
+  .t2 span {
+    display: inline-block;
+    margin: 0 70px;
+    line-height: 40px; }
+  .t2 span img {
+    width: 135px; }
+
+#g {
+  margin: 0; }
+
+.banner {
+  width: 100%;
+  height: auto; }
+
+.banner img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle; }
+
+.t3 {
+  width: 100%;
+  background: #f5f5f5; }
+  .t3 .shop {
+    width: 100%; }
+  .t3 .shop li {
+    display: inline-block;
+    margin-right: 25px; }
+  .t3 img {
+    width: 385px;
+    height: 257px; }
+  .t3 #s8 {
+    margin: 40px 0; }
+
+.parts .parts1 {
+  width: 100%;
+  height: 66px; }
+  .parts .parts1 .pleft {
+    float: left;
+    font-size: 30px;
+    line-height: 66px; }
+  .parts .parts1 .pcenter {
+    display: inline-block;
+    margin-left: 215px;
+    font-size: 20px;
+    margin-top: 30px; }
+  .parts .parts1 .pcenter a {
+    margin-right: 45px; }
+  .parts .parts1 .pright {
+    float: right;
+    font-size: 20px;
+    margin-top: 30px; }
+  .parts .parts1 a {
+    color: #333333; }
+
+.parts .parts2 {
+  margin: 25px 0; }
+  .parts .parts2 img {
+    width: 217px;
+    height: 217px;
+    margin: 0 auto;
+    vertical-align: middle; }
+  .parts .parts2 h3 {
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center; }
+  .parts .parts2 p {
+    font-size: 16px;
+    text-align: center; }
+  .parts .parts2 li {
+    padding: 20px 24px 20px 40px;
+    display: inline-block;
+    width: 200px;
+    height: 258px;
+    background: white;
+    border: 10px solid white;
+    margin-left: 23px; }
+  .parts .parts2 #leshi {
+    margin-left: 0;
+    float: left; }
+
+.parts .parts3 p {
+  font-size: 28px;
+  margin-top: 26px; }
+
+.parts .parts3 .lb2 {
+  margin: 40px 0; }
+
+.parts .parts3 .lb2 img {
+  width: 100%;
+  height: 100%; }
+
+.parts .parts4 p {
+  font-size: 28px; }
+
+.parts .parts4 .shop2 {
+  margin: 40px 0; }
+  .parts .parts4 .shop2 img {
+    width: 217px;
+    height: 217px;
+    margin: 0 auto;
+    vertical-align: middle; }
+  .parts .parts4 .shop2 h3 {
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 28px; }
+  .parts .parts4 .shop2 p {
+    font-size: 16px;
+    text-align: center; }
+  .parts .parts4 .shop2 li {
+    padding: 20px 24px 41px 40px;
+    display: inline-block;
+    width: 200px;
+    height: 258px;
+    background: white;
+    border: 10px solid white;
+    margin-left: 23px; }
+  .parts .parts4 .shop2 #leshi {
+    margin-left: 0;
+    float: left; }
+
+.parts .parts5 img {
+  width: 100%;
+  height: 100%; }
+
+.parts .parts6 .Recommend {
+  width: 100%;
+  height: 50px;
+  margin-top: 50px; }
+  .parts .parts6 .Recommend .pleft {
+    float: left;
+    font-size: 30px;
+    line-height: 50px; }
+  .parts .parts6 .Recommend .pcenter {
+    display: inline-block;
+    margin-left: 215px;
+    font-size: 20px;
+    margin-top: 30px; }
+  .parts .parts6 .Recommend .pcenter a {
+    margin-right: 45px; }
+  .parts .parts6 .Recommend a {
+    color: #333333; }
+
+.parts .parts6 .phone img {
+  width: 217px;
+  height: 217px;
+  margin: 0 auto;
+  vertical-align: middle; }
+
+.parts .parts6 .phone h3 {
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center; }
+
+.parts .parts6 .phone p {
+  font-size: 16px;
+  text-align: center; }
+
+.parts .parts6 .phone li {
+  padding: 20px 24px 41px 40px;
+  display: inline-block;
+  width: 200px;
+  height: 258px;
+  background: white;
+  border: 10px solid white;
+  margin-top: 25px;
+  margin-left: 23px;
+  margin-bottom: 60px; }
+
+.parts .parts6 .phone #leshi {
+  margin-left: 0;
+  float: left; }
