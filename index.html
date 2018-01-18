@@ -37,8 +37,17 @@
 	时间：2018-01-17
 	描述：此处留有一个轮播图
 -->
-<div class="banner">
-	<img src="img/toplunbo/3.jpg"/>
+ <div class="banner" id="animation">
+                <ul>
+                    <li><img src="img/banner-1.jpg"></li>
+                    <li><img src="img/banner-2.jpg"></li>
+                    <li><img src="img/banner-3.jpg"></li>
+                    <li><img src="img/banner-4.jpg"></li>
+                    <li><img src="img/banner-5.jpg"></li>
+                    <li><img src="img/banner-6.jpg"></li>
+                    <li><img src="img/banner-7.jpg"></li>
+                    <li><img src="img/banner-8.jpg"></li>
+                </ul>
 </div>
 <!--
 	作者：811102510@qq.com
@@ -98,7 +107,11 @@
 			<div class="parts3">	
 				<p>活动专区</p>
 				<div class="lb2">
-					<img src="img/tlunbo/GearS3banner1116-P.jpg" alt="" />
+					<ul>
+                    <li><img src="img/bane-1.jpg"></li>
+                    <li><img src="img/bane-2.jpg"></li>
+                    <li><img src="img/bane-3.jpg"></li>
+                </ul>
 				</div>
 			</div>
 			<div class="parts4">	
@@ -137,7 +150,8 @@
 				</div>
 			</div>
 			<div class="parts5">
-				<a href="#"><img src="img/tlunbo/TabMkv180106-P.jpg" alt="" /></a>
+				
+				<a href="#"><img src="img/Gear180106-P.jpg" alt="" /></a>
 			</div>
 			<div class="parts6">
 				<div class="Recommend">
@@ -290,3 +304,9 @@
 </div>
 </body>
 </html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.terseBanner.min.js"></script>
+<script type="text/javascript">
+	 $('.banner').terseBanner();
+	 $('.lb2').terseBanner();
+</script>
