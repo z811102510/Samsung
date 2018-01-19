@@ -20,7 +20,7 @@ img {
   height: 45px;
   background: #f2f2f2; }
   .t1 i {
-    font-size: 10px;
+    font-size: 8px;
     font-weight: bold; }
 
 .t1 a {
@@ -39,34 +39,77 @@ img {
   line-height: 45px;
   float: right; }
 
-.t2 .dh {
-  height: 64px;
-  text-align: center;
-  position: relative; }
-  .t2 .dh .dhleft {
-    display: inline-block;
-    float: left; }
-  .t2 .dh .dhright {
-    display: inline-block;
-    position: absolute; }
-  .t2 .dh a {
-    display: inline-block;
-    color: #363636;
-    font-size: 15px;
-    margin-right: 18px;
-    line-height: 64px;
-    position: relative; }
-  .t2 .dh span {
-    display: inline-block;
+.t2 {
+  position: relative;
+  background: url(../../img/register/bg_top.gif) repeat-x; }
+  .t2 a:hover {
+    color: cornflowerblue; }
+  .t2 .zsp {
+    width: 100%;
+    height: 250px;
+    background: #fff;
+    border-top: 1px solid #666666;
     position: absolute;
-    left: 45%;
-    top: 5px;
-    line-height: 40px; }
-  .t2 .dh span img {
-    width: 135px; }
-  .t2 .dh i {
-    margin-right: 10px;
-    font-size: 20px; }
+    top: 64px;
+    z-index: 1; }
+  .t2 .zsp1 {
+    display: none; }
+  .t2 .zsp2 {
+    display: none; }
+  .t2 .zsp3 {
+    display: none; }
+  .t2 .Top .tLeft {
+    margin: 25px;
+    float: left;
+    border-right: 1px solid gray;
+    height: 150px;
+    text-align: center;
+    padding-right: 100px;
+    margin-left: 0; }
+    .t2 .Top .tLeft img {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 5px; }
+    .t2 .Top .tLeft a {
+      display: inline-block;
+      color: #333333;
+      margin-right: 20px; }
+    .t2 .Top .tLeft p {
+      width: 120px; }
+  .t2 .Top .tRight {
+    padding: 30px; }
+    .t2 .Top .tRight a {
+      color: #333333; }
+    .t2 .Top .tRight p {
+      padding-bottom: 10px; }
+  .t2 .dh {
+    height: 64px;
+    text-align: center;
+    position: relative; }
+    .t2 .dh .dhleft {
+      display: inline-block;
+      float: left; }
+    .t2 .dh .dhright {
+      display: inline-block;
+      position: absolute; }
+    .t2 .dh a {
+      display: inline-block;
+      color: #363636;
+      font-size: 15px;
+      margin-right: 18px;
+      line-height: 64px;
+      position: relative; }
+    .t2 .dh span {
+      display: inline-block;
+      position: absolute;
+      left: 45%;
+      top: 5px;
+      line-height: 40px; }
+    .t2 .dh span img {
+      width: 135px; }
+    .t2 .dh i {
+      margin-right: 10px;
+      font-size: 20px; }
 
 #g {
   margin: 0; }
@@ -76,9 +119,7 @@ img {
   height: 400px; }
 
 .banner img {
-  width: 100%;
-  height: auto;
-  vertical-align: middle; }
+  height: auto; }
 
 .t3 {
   width: 100%;
@@ -87,7 +128,7 @@ img {
     width: 100%; }
   .t3 .shop li {
     display: inline-block;
-    margin-right: 55px; }
+    margin-right: 50px; }
   .t3 img {
     width: 385px;
     height: 257px; }
@@ -136,7 +177,7 @@ img {
     height: 258px;
     background: white;
     border: 10px solid white;
-    margin-left: 43px; }
+    margin-left: 39px; }
   .parts .parts2 #leshi {
     margin-left: 0;
     float: left; }
@@ -177,7 +218,7 @@ img {
     height: 258px;
     background: white;
     border: 10px solid white;
-    margin-left: 43px; }
+    margin-left: 39px; }
   .parts .parts4 .shop2 #leshi {
     margin-left: 0;
     float: left; }
@@ -227,7 +268,7 @@ img {
   background: white;
   border: 10px solid white;
   margin-top: 25px;
-  margin-left: 43px;
+  margin-left: 39px;
   margin-bottom: 60px; }
 
 .parts .parts6 .phone #leshi {

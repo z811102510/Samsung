@@ -22,8 +22,9 @@ img{
     height: 45px;
     background:#f2f2f2;
     i{
-        font-size: 10px;  
+        font-size: 8px;  
         font-weight: bold;
+        
     }
     
 }
@@ -45,6 +46,65 @@ img{
     float: right;
 }
 .t2{
+    position: relative;
+    background: url(../../img/register/bg_top.gif) repeat-x;
+    
+          a:hover{
+              color:cornflowerblue;
+          }
+   .zsp{
+       width: 100%;
+       height: 250px; 
+       background: #fff; 
+       border-top:1px solid #666666 ;
+       position: absolute; 
+       top: 64px;
+       z-index: 1;
+      
+      }
+      .zsp1{
+          display: none ;
+      }
+      .zsp2{
+          display: none;
+      }
+      .zsp3{
+          display: none;
+      }
+      .Top{
+          .tLeft{
+              margin: 25px;
+              float: left;
+              border-right: 1px solid gray;
+              height: 150px;
+              text-align: center;
+              padding-right: 100px;
+              margin-left: 0;
+            img{
+                width: 120px;
+                height: 120px;
+                margin-bottom: 5px;
+            }
+            a{
+                display: inline-block;
+                color: #333333;
+                margin-right:20px ;
+            }
+            p{
+                width: 120px;
+            }
+            
+          }
+          .tRight{
+              padding: 30px;
+              a{
+                  color: #333333;
+              }
+              p{
+                  padding-bottom: 10px;
+              }
+          }
+      }
     .dh{
     height: 64px;
     text-align: center;
@@ -90,9 +150,7 @@ img{
     height: 400px;
 }
 .banner img{
-    width:100%;
     height: auto;
-    vertical-align:middle;
 }
 //商品展示
 .t3{
@@ -103,7 +161,7 @@ img{
     }
     .shop li{
     display: inline-block;
-    margin-right: 55px;
+    margin-right: 50px;
     }   
    img{
     width: 385px;
@@ -167,7 +225,7 @@ img{
             height: 258px;
             background: white;
             border: 10px solid white;
-            margin-left: 43px;
+            margin-left: 39px;
         }
         #leshi{
             margin-left:0 ;
@@ -218,7 +276,7 @@ img{
             height: 258px;
             background: white;
             border: 10px solid white;
-            margin-left: 43px;
+            margin-left: 39px;
             }
             
         #leshi{
@@ -282,7 +340,7 @@ img{
             background: white;
             border: 10px solid white;
             margin-top: 25px;
-            margin-left: 43px;
+            margin-left: 39px;
             
         margin-bottom: 60px;
         }
@@ -368,6 +426,7 @@ img{
    }
 }
 .t6{
+    
     height: 170px;
     background: #525252;
     .fleft{
@@ -396,3 +455,4 @@ img{
         }
     }
 }
+ 

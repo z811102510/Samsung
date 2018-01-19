@@ -1,0 +1,155 @@
+@charset "UTF-8";
+$n:none;
+body,div,p,ul,ol,li,dl,dt,dd,table,tr,td,th,form,h1,h2,h3,h4,h5,h6,fieldset,figure,hr,img,input{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: "微软雅黑",Arial;
+    background: url(../../img/bg_body.gif) repeat;
+}
+ol,ul{
+    list-style: $n;
+}
+a{
+    text-decoration: $n;
+}
+img{
+    border: $n;
+}
+//头部logo
+.r1{
+    width: 100%;
+    height: 80px;
+    background: url(../../img/register/bg_top.gif)  repeat-x left top;
+    img{
+       margin-top: 20px;
+    }
+}
+.content{
+    margin:0 auto;
+    width: 50%;
+}
+.r2{
+    width: 100%;
+    background: url(../../img/register/bg_container.gif) repeat-x left top;
+    .register{
+    .cjzh{
+        width: 100%;
+        height: 85px;
+        background-color:#0283e1;
+        padding-top: 30px;
+        h2{
+            line-height: 85px;
+            color: white;
+            font-size: 25px;
+            margin-left: 60px;
+        }
+   }
+     .zc{
+         background: white;
+          padding-left: 60px;
+          padding-right: 60px;
+           padding-top: 90px;
+        lable{
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+            margin-right:30px ;
+        }
+        .zc1{
+            .ooo{
+                p{
+                    display: inline-block;
+                    color:#333333;
+                }
+                span{
+                    display: inline-block;
+                    margin-left: 10px;
+                }
+            }
+        li{
+            margin-bottom: 25px;
+        }
+        input[type=text]{
+            text-align: right;
+               width: 410px;
+               height: 30px;  
+               border: 2px solid  #cccccc;          
+        }
+        input[type=password]{
+            text-align: right;
+               width: 410px;
+               height: 30px;    
+               border: 2px solid  #cccccc;           
+        }
+        span{
+            display: block;
+           input{
+               display:block;
+           }
+        }
+        .aq{
+            span{
+                margin-left: 130px;
+                margin-bottom: 10px;
+                
+              input[type=text]{
+                  margin-bottom: 25px;
+              } 
+            }
+        }
+        }
+        .zc2{
+            margin-top: 35px;
+            li{
+                margin-bottom: 10px;
+            }
+            input[type=radio]{
+                display: inline-block;
+                margin-right: 10px;
+            }
+        }
+        .zc3{
+            width: 100%;
+            display: inline-block;
+            text-align: center;
+            margin: 45px 0;
+            input[type=button]{
+                width:150px ;
+                height: 45px;
+                border: none;
+                
+            }
+             .jx{
+                    background: #2a78c3;
+                    color: #FFFFFF;
+                    margin-left: 15px;
+                } 
+        }
+      }
+    }
+}
+
+.t6{
+    
+.content{
+    margin:0 auto;
+    width: 70%;
+}
+    height: 118px;
+    background: #000000;
+    line-height: 160px;
+    .t6Left{
+        float: left;
+       a{
+           color: #fff;
+           margin-left: 10px;
+       } 
+       
+    }
+    .t6Right{
+        float: right;
+        color: #333333;
+    }
+}

@@ -19,12 +19,67 @@
 	</div>
 </div>
 <div class="t2">
+	<div  class="zsp zsp1">
+		<div class="content">
+			<ul class="Top">
+				<li class="tLeft">
+					<a href="#"><img src="img/15096956531215529_293X293.jpg"/><p>这是S8手机,你想要吗？</p></a>
+					<a href="#"><img src="img/15096956531215529_293X293.jpg"/><p>这是S8手机,你想要吗？</p></a>
+					<a href="#"><img src="img/15096956531215529_293X293.jpg"/><p>这是S8手机,你想要吗？</p></a>
+					<a href="#"><img src="img/15096956531215529_293X293.jpg"/><p>这是S8手机,你想要吗？</p></a>
+				</li>
+				<li class="tRight">
+					<a href="#"><p>s8真好看</p></a>
+					<a href="#"><p>s8真好看</p></a>
+					<a href="#"><p>s8真好看</p></a>
+					<a href="#"><p>s8真好看</p></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div  class="zsp zsp2">
+		<div class="content">
+			<ul class="Top">
+				<li class="tLeft">
+					<a href="#"><img src="img/pj/dc/14599122508104624_293X293.jpg"/><p>这是无线充电,你想要吗？</p></a>
+					<a href="#"><img src="img/pj/dc/14599122508104624_293X293.jpg"/><p>这是无线充电,你想要吗？</p></a>
+					<a href="#"><img src="img/pj/dc/14599122508104624_293X293.jpg"/><p>这是无线充电,你想要吗？</p></a>
+					<a href="#"><img src="img/pj/dc/14599122508104624_293X293.jpg"/><p>这是无线充电,你想要吗？</p></a>
+				</li>
+				<li class="tRight">
+					<a href="#"><p>买无线充电送手机</p></a>
+					<a href="#"><p>买无线充电送手机</p></a>
+					<a href="#"><p>买无线充电送手机</p></a>
+					<a href="#"><p>买无线充电送手机</p></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div  class="zsp zsp3">
+		<div class="content">
+			<ul class="Top">
+				<li class="tLeft">
+					<a href="#"><img src="img/pj/ej/14981101625727608_293X293.jpg"/><p>这是耳机,你想要吗？</p></a>
+					<a href="#"><img src="img/pj/ej/14958803481575023_293X293.jpg"/><p>这是耳机,你想要吗？</p></a>
+					<a href="#"><img src="img/pj/ej/1470641460671920_293X293.jpg"/><p>这是耳机,你想要吗？</p></a>
+					<a href="#"><img src="img/pj/ej/14981101625727608_293X293.jpg"/><p>这是耳机,你想要吗？</p></a>
+				</li>
+				<li class="tRight">
+					<a href="#"><p>买耳机啥都不送</p></a>
+					<a href="#"><p>买耳机啥都不送</p></a>
+					<a href="#"><p>买耳机啥都不送</p></a>
+					<a href="#"><p>买耳机啥都不送</p></a>
+				</li>
+			</ul>
+		</div>
+	</div>
 	<div class="content">
 		<div class="dh">
 		<div class="dhleft">
-		<a href="#">智能手机</a>
-		<a href="#">可穿戴设备</a>
-		<a href="#">个人电脑</a>
+		<a class="znSj" href="#">智能手机</a>
+		
+		<a class="kcSb" href="#">可穿戴设备</a>
+		<a class="grPc" href="#">个人电脑</a>
 		<a href="#">空气净化器</a>
 		<a href="#">配件</a>
 		</div>
@@ -307,7 +362,7 @@
 		</div>
 		<div class="fright">
 			<p>三星（中国）投资有限公司授权上海宝尊电子商务有限公司运营三星网上商城并销售产品</p>
-			<span>沪ICP备11014294号     沪公网安备 31010802001780号</span>
+			<span>沪ICP备11014294号 <span class="icp1"></span><span class="icp1"></span>沪公网安备 31010802001780号</span>
 		</div>
 	</div>
 </div>
@@ -321,5 +376,21 @@
 	 $(".footicon").hover(function(){
 	 	$(".footicon i").css("background","#1D7DB1");
 	 	$(".footicon i").css("border-radius","50%");
+	 })
+	 $(".znSj").hover(function(){
+	 	$(".zsp1").css("display","block");
+	 	$(".zsp1").slideDown("5000");
+	 	$(".zsp2").css("display","none");
+	 	$(".zsp3").css("display","none");
+	 })
+	  $(".kcSb").hover(function(){
+	 	$(".zsp1").css("display","none");
+	 	$(".zsp2").css("display","block");
+	 	$(".zsp3").css("display","none");
+	 })
+	  $(".grPc").hover(function(){
+	 	$(".zsp1").css("display","none");
+	 	$(".zsp2").css("display","none");
+	 	$(".zsp3").css("display","block");
 	 })
 </script>
