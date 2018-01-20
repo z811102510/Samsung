@@ -59,12 +59,10 @@ img {
     .r2 .register .zc .zc1 li {
       margin-bottom: 25px; }
     .r2 .register .zc .zc1 input[type=text] {
-      text-align: right;
       width: 410px;
       height: 30px;
       border: 2px solid  #cccccc; }
     .r2 .register .zc .zc1 input[type=password] {
-      text-align: right;
       width: 410px;
       height: 30px;
       border: 2px solid  #cccccc; }

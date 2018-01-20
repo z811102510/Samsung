@@ -1,0 +1,338 @@
+@charset "UTF-8";
+$n:none;
+body,div,p,ul,ol,li,dl,dt,dd,table,tr,td,th,form,h1,h2,h3,h4,h5,h6,fieldset,figure,hr,img,input{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: "微软雅黑",Arial;
+}
+ol,ul{
+    list-style: $n;
+}
+a{
+    text-decoration: $n;
+}
+img{
+    border: $n;
+}
+//最上方
+.t1{
+    width: 100%;
+    height: 45px;
+    background:#f2f2f2;
+    i{
+        font-size: 8px;  
+        font-weight: bold;
+        
+    }
+    
+}
+.t1 a{
+    color: #363636;
+    font-size: 14px;
+}
+.content{
+    margin-left:8%;
+    margin-right:8%;
+}
+
+.t1left{
+    float: left;
+    line-height: 45px;
+}
+.t1right{
+    line-height: 45px;
+    float: right;
+}
+.t2{
+    position: relative;
+    background: url(../../img/register/bg_top.gif) repeat-x;
+    
+          a:hover{
+              color:cornflowerblue;
+          }
+   .zsp{
+       width: 100%;
+       height: 250px; 
+       background: #fff; 
+       border-top:1px solid #666666 ;
+       position: absolute; 
+       top: 64px;
+       z-index: 1;
+      
+      }
+      .zsp1{
+          display: none ;
+      }
+      .zsp2{
+          display: none;
+      }
+      .zsp3{
+          display: none;
+      }
+      .Top{
+          .tLeft{
+              margin: 25px;
+              float: left;
+              border-right: 1px solid gray;
+              height: 150px;
+              text-align: center;
+              padding-right: 100px;
+              margin-left: 0;
+            img{
+                width: 120px;
+                height: 120px;
+                margin-bottom: 5px;
+            }
+            a{
+                display: inline-block;
+                color: #333333;
+                margin-right:20px ;
+            }
+            p{
+                width: 120px;
+            }
+            
+          }
+          .tRight{
+              padding: 30px;
+              a{
+                  color: #333333;
+              }
+              p{
+                  padding-bottom: 10px;
+              }
+          }
+      }
+    .dh{
+    height: 64px;
+    text-align: center;
+    position: relative;
+    .dhleft{
+        display: inline-block;
+        float: left;
+    }
+    .dhright{
+        display: inline-block;
+        position: absolute;
+    }
+    a{
+    display: inline-block;
+    color: #363636;
+    font-size: 15px;
+    margin-right:18px;
+    line-height: 64px;
+    position: relative;
+    }
+    span{
+    display: inline-block;
+    position: absolute;
+    left: 45%;
+    top: 5px;
+    line-height: 40px;
+    }
+    span img{
+    width: 135px;
+    }
+    i{
+        margin-right: 10px;
+        font-size: 20px;
+    }
+    }
+}
+#g{
+    margin: 0;
+}
+.t3{
+    width: 100%;
+    height: 100%;  
+    img{
+        display: block;
+        width: 100%;
+        height: auto;
+     }
+    .c1{
+        position: relative;
+      
+           .d1{
+               position: absolute;
+               bottom: 10px;
+               right: 0; 
+        }
+    }
+    .c2{
+        position: relative;
+        .d2{
+               position: absolute;
+               bottom: 0;
+               right: 0; 
+        }
+        .g1,.g2,.g3{
+            img{
+            width: 172px;
+            height: 50px;}
+        }
+        .g1{
+            position: absolute;
+            top: 343px;
+            left: 535px;
+        }
+        
+        .g2{
+            position: absolute;
+            top: 343px;
+            left: 1005px;
+        }
+        
+        .g3{
+            position: absolute;
+            top: 240px;
+            left: 1005px;
+        }
+    }
+    .c3{
+        position: relative;
+        .d3{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        
+        a{
+            img{
+            width: 130px;
+            height: 40px;}
+        }
+        .g4{
+            position: absolute;
+            top: 395px;
+            left: 375px;
+        }
+        
+        .g5{
+            position: absolute;
+            top: 395px;
+            left: 605px;
+        }
+        
+        .g6{
+            position: absolute;
+            top: 395px;
+            left: 845px;
+        }
+        .g7{
+            position: absolute;
+            top: 395px;
+            left: 1080px;
+        }
+        
+        .g8{
+            position: absolute;
+            top: 310px;
+            left: 375px;
+        }
+        
+        .g9{
+            position: absolute;
+            top: 310px;
+            left: 605px;
+        }
+        
+        .g10{
+            position: absolute;
+            top: 310px;
+            left: 845px;
+        }
+        .g11{
+            position: absolute;
+            top: 310px;
+            left: 1080px;
+        }
+        .g12{
+            position: absolute;
+            top: 350px;
+            left: 845px;
+        }
+        .g13{
+            position: absolute;
+            top: 350px;
+            left: 1030px;
+        }
+        .g14{
+            position: absolute;
+            top: 350px;
+            left: 680px;
+        }
+        .g15{
+            position: absolute;
+            top: 350px;
+            left: 365px;
+        }
+        .g16{
+            position: absolute;
+            top: 350px;
+            left: 1010px;
+        }
+        
+        .g17{
+            position: absolute;
+            top: 395px;
+            left: 280px;
+            img{
+                width: 170px;
+                height: 50px;
+            }
+            
+        }
+        .g18{
+            position: absolute;
+            top: 350px;
+            left: 445px;
+        }
+        .g19{
+            position: absolute;
+            top: 350px;
+            left: 765px;
+        }
+        .g20{
+            position: absolute;
+            top: 350px;
+            left: 1010px;
+        }
+    }
+}
+
+
+
+.t6{
+    
+    height: 170px;
+    background: #525252;
+    .fleft{
+        float: left;
+        padding-top:35px ;
+        a{
+            font-size: 18px;
+            color: #FFFFFF;
+            margin-right: 30px;
+        }
+        p{
+            margin-top: 35px;
+            font-size: 14px;
+            color: #cccccc;
+        }
+    }
+    .fright{
+        float: right;
+        padding-top:35px ;
+        p{
+            width: 384px;
+            margin-right: 190px;
+            font-size: 16px;
+            color: white;
+            margin-bottom: 15px;
+        }
+    }
+}
+ 

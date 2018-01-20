@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <title>Create&nbsp;a&nbsp;三星&nbsp;account</title>
 <link rel="stylesheet" type="text/css" href="css/css/register.css"/>
+<link rel="stylesheet" href="css/css/verify.css" />
 </head>
 <body>
 	<!--
@@ -71,9 +72,9 @@
     							<li class="aq">
     								<lable>安全验证码</lable>
     								<span>
-    								<p>请键入下图中显示的字符</p>
-    								<input type="text" />
-    								<input type="text" />
+    								<div class="row">
+									<div class="col-md-offset-4 col-md-4">
+									<div id="mpanel2" ></div>
     								</span>
     							</li>
     						</ul>
@@ -95,7 +96,7 @@
     					
     					<span class="zc3">
     						<input type="button" value="取消" />
-    						<input class="jx" type="button" value="继续" />
+    						<input class="jx" type="button"  id="check-btn"  value="继续" />
     					</span>
     				</form>
     			</div>
@@ -116,3 +117,26 @@
 </div>  
 </body>
 </html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/verify.min.js" ></script>
+	<script type="text/javascript">
+		$('#mpanel2').codeVerify({
+			type : 1,
+			width : '400px',
+			height : '50px',
+			fontSize : '30px',
+			codeLength : 6,
+			btnId : 'check-btn',
+			ready : function() {
+			},
+			success : function() {
+				alert('验证匹配！');
+			},
+			error : function() {
+				alert('验证码不匹配！');
+			}
+		});
+		
+		
+		
+	</script>
