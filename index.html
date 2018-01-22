@@ -373,27 +373,16 @@
 <script type="text/javascript">
 	 $('.banner').terseBanner();
 	 $('.lb2').terseBanner();
-	 $(".footicon").hover(function(){
-	 	$(".footicon i").css("background","#1D7DB1");
-	 	$(".footicon i").css("border-radius","50%");
-	 })
-	 $(".znSj").hover(function(){
-	 	$(".zsp1").css("display","block");
-	 	$(".zsp1").slideDown("5000");
-	 	$(".zsp2").css("display","none");
-	 	$(".zsp3").css("display","none");
-	 })
-	  $(".kcSb").hover(function(){
-	 	$(".zsp1").css("display","none");
-	 	$(".zsp2").css("display","block");
-	 	$(".zsp3").css("display","none");
-	 })
-	  $(".grPc").hover(function(){
-	 	$(".zsp1").css("display","none");
-	 	$(".zsp2").css("display","none");
-	 	$(".zsp3").css("display","block");
-	 })
-	 $(".t2").hover(function(){ 
+	  $(".znSj").mouseover(function(){
+	  	$(".zsp1").css("display","block")
+	  })
+	   $(".kcSb").mouseover(function(){
+	  	$(".zsp2").css("display","block")
+	  })
+	    $(".grPc").mouseover(function(){
+	  	$(".zsp3").css("display","block")
+	  })
+	 $(".t2").mouseout(function(){ 
 	 	$(".zsp1").css("display","none");
 	 	$(".zsp2").css("display","none");
 	 	$(".zsp3").css("display","none");
