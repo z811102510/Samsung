@@ -1,0 +1,174 @@
+
+@charset "UTF-8";
+$n:none;
+body,div,p,ul,ol,li,dl,dt,dd,table,tr,td,th,form,h1,h2,h3,h4,h5,h6,fieldset,figure,hr,img,input{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: "微软雅黑",Arial;
+}
+ol,ul{
+    list-style: $n;
+}
+a{
+    text-decoration: $n;
+}
+img{
+    border: $n;
+}
+.content{
+    margin: 0 8%;
+}
+
+.t5{
+   width: 100%;
+   height: 375px;
+   background: #f5f5f5;
+   .w{
+         position: relative;
+       .w1{
+               color: #333;
+           display: inline-block;
+           margin-top: 50px;
+           margin-bottom: 30px;
+           margin-right: 230px;
+              i{
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    background: url(../../img/icon.png); 
+                    background-position: 0 0;
+                    margin-left: 5px; 
+                 }
+           li{
+               margin-bottom: 10px;
+           }
+           .b{
+               margin-bottom: 25px;
+               font-weight: 900;
+           }
+       }
+       a{
+           color: #333333;
+       }
+   } 
+   .ft{
+       margin-top: 20px;
+       margin-bottom: 30px;
+       color: #333;
+   }
+   .foot1{
+       float: right;
+       margin-top: 25px;
+       margin-right: 158px;
+       i{
+           margin-top: 20px;
+           display: inline-block;
+           background: url(../../img/icon-common.png);
+       }
+       .footicon{
+           
+       i{   
+           width: 50px;
+           height: 50px;
+       }
+       .weibo{
+           background-position: -1100px -1300px;
+       }
+        .weibo:hover{
+           background-position: -1150px -1300px;
+       }
+       .iweixin{
+           background-position: -1195px -1300px;
+       }
+       
+       .iweixin:hover{
+           background-position: -1245px -1300px;
+       }
+       .tengxunweibo1{
+           background-position: -1290px -1300px;
+       }
+       .tengxunweibo1:hover{
+           background-position: -1340px -1300px;
+       }
+       
+       }
+       p{
+           font-weight: 900;
+           
+       }
+        }
+    .slss{
+        display: block;
+        .gls{
+             width: 150px;
+             height: 50px;
+             background-position: -1490px -1356px; 
+        } 
+        .gls:hover{
+             background-position: -1490px -1356px; 
+        }
+    }    
+}
+.t6{
+    height: 170px;
+    background: #525252;
+    .fleft{
+        float: left;
+        padding-top:35px ;
+        a{
+            font-size: 18px;
+            color: #FFFFFF;
+            margin-right: 30px;
+        }
+        p{
+            margin-top: 35px;
+            font-size: 14px;
+            color: #cccccc;
+        }
+    }
+    .fright{
+        float: right;
+        padding-top:35px ;
+        vertical-align: text-top;
+        p{
+            width: 345px;
+            margin-right: 190px;
+            color: white;
+            margin-bottom: 15px;
+            font-weight: 100;
+            font-size: 15px;
+        }
+        i{
+            display: inline-block;
+           background: url(../../img/icon-common.png);
+        }
+        .p1{
+            width: 100%;
+            a{
+                
+            color: white;
+            display: inline-block;.icp1{
+            width: 113px;
+            height: 20px;
+            background: url(../../img/lz1.gif);
+            background-size: 100%;
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+        .icp2{
+            display: inline-block;
+            width: 20px;
+            height: 20px; 
+            vertical-align: middle;
+            background: url(../../img/hu-beian.png);
+            background-size: 100%;
+            margin:0 10px;
+             }
+           }
+        }
+        
+    }
+}
+ 

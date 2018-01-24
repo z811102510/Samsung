@@ -1,0 +1,295 @@
+@charset "UTF-8";
+$n:none;
+body,div,p,ul,ol,li,dl,dt,dd,table,tr,td,th,form,h1,h2,h3,h4,h5,h6,fieldset,figure,hr,img,input{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: "微软雅黑",Arial;
+}
+ol,ul{
+    list-style: $n;
+}
+a{
+    text-decoration: $n;
+}
+img{
+    border: $n;
+}
+//最上方
+.t1{
+    width: 100%;
+    height: 45px;
+    background:#f2f2f2;
+    i{
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background: url(../../img/icon.png); 
+        background-position: 0 0;
+        margin-left: 5px; 
+    }
+    a:hover{
+        color: #00008B;
+        i{
+           background-position: 0 -26px; 
+        }
+    }
+    
+}
+.t1 a{
+    color: #363636;
+}
+.content{
+    height: 100%;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+.t1left{
+    font-size:18px;
+    float: left;
+    line-height: 45px;
+}
+.t1right{
+    font-size: 15px;
+    line-height: 45px;
+    float: right;
+}
+.ttt { 
+      display: block; /* 默认隐藏 */ 
+      position: fixed; 
+      z-index: 1; 
+      padding-top: 100px; 
+      left: 0; 
+      top: 0; 
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgb(0,0,0); 
+      background-color: rgba(0,0,0,0.4); 
+      div{
+          width: 100%;
+          height: 100%;
+          position: relative;
+          .inte{
+              position: relative;
+              left: 30%;
+          }
+          .d2{
+              position: absolute;
+              left: 44%;
+              bottom: 44%;
+          }
+      }
+    } 
+   
+    @-webkit-keyframes animatetop { 
+      from {top:-300px; opacity:0} 
+      to {top:0; opacity:1} 
+    } 
+  
+    @keyframes animatetop { 
+      from {top:-300px; opacity:0} 
+      to {top:0; opacity:1} 
+    } 
+    .d2{
+      width: 325px;
+      height: 60px;
+      background-color: #1428a0;
+      color: #fff;
+      font-size: 20px;
+      margin:  0 auto;
+      border-radius: 10px;  
+      border: none;
+    }
+    .d2:hover{
+        cursor:pointer;
+    }
+    
+    
+.t2{
+    position: relative;
+    background: url(../../img/register/bg_top.gif) repeat-x;
+   .zsp{
+       width: 100%;
+       height: 200px; 
+       background: #fff; 
+       border-top:1px solid #eee ;
+       position: absolute; 
+       top: 64px;
+       z-index: 1;
+      
+      }
+      .zsp1{
+          display: none ;
+      }
+      .zsp2{
+          display: none;
+      }
+      .zsp3{
+          display: none;
+      }
+      .zsp4{
+          display: none;
+      }
+      .zsp5{
+          display: none;
+      }
+      .Top{
+          .tLeft{
+              margin: 20px;
+              float: left;
+              border-right: 1px solid #eee;
+              height: 150px;
+              text-align: center;
+              padding-right: 40px;
+              margin-left: 0;
+            img{
+                width: 80px;
+                height: 80px;
+                margin-bottom: 5px;
+                vertical-align: middle;
+            }
+            a{
+                display: inline-block;
+                width: 20%;
+                height: 100%;
+                color: #333333;
+                margin-right:20px ;
+                vertical-align: middle;
+            }
+            a:hover{
+                color: blue;
+            }
+            p{
+                width: 120px; 
+            }
+            
+          }
+          .tRight{
+              padding: 35px;
+              a{
+                  color: #333333;
+              }
+              p{
+                  font-size: 15px;
+                  padding-bottom: 10px; 
+              }
+              ul{
+                  li{
+                      width: 15%;
+                      height: 100%;
+                      vertical-align: top;
+                      display: inline-block;
+                      p{
+                         font-size: 12px;
+                         color: #666;
+                      }
+                      span{
+                          a{
+                             
+                          color: #333333;
+                          font-size: 15px;
+                          display: block;
+                          margin-bottom: 10px; 
+                          }
+                          
+                      }
+                  }
+              }
+          }
+      }
+    .dh{
+        height: 64px;
+        text-align: center;
+        position: relative;  
+        border-bottom:1px solid #EEEEEE ;
+    .dhleft{
+        display: inline-block; 
+        float: left;
+        a{
+            margin-right: 40px;
+        }
+        a:hover{
+            color: darkblue;
+            border-bottom: 2px solid blue;
+            z-index: 1;
+        }
+    }
+    .dhright{
+        display: inline-block;
+        float: right;
+        a:hover{
+            color: darkblue;
+            .service{
+                  background-position: -45px -24px; 
+            }
+            
+            .sign{
+                background-position: -70px -24px;
+            }
+            
+            .ss{
+                background-position: -100px -24px;
+            }    
+            .gwc{
+                background-position:-127px -24px ;
+            }   
+        }
+        
+    }
+    a{
+    display: inline-block;
+    color: #363636;
+    font-size: 15px;
+    line-height: 64px;
+    position: relative;
+    }
+    .sum{
+    display: inline-block;
+    margin: 0 auto;
+    vertical-align: middle;
+    }
+    .tell{
+        background-position: -19px 2px;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+    .service{
+        background-position: -45px 2px;
+        margin-right: 5px;
+    }
+    .sign{
+        background-position: -70px 2px;
+        margin-left: 20px;
+        margin-right: 5px;
+    }
+    .ss{
+        background-position: -100px 2px;
+        margin-left: 20px;
+        margin-right: 5px;
+    }
+    .gwc{
+        background-position: -127px 2px;
+        margin-left: 20px;
+        margin-right: 5px;
+    }
+    span img{
+    width: 135px;
+    vertical-align: middle;
+    }
+    i{
+        display: inline-block;
+        margin-left: 20px;
+        vertical-align: middle;
+        width: 21px;
+        height: 20px;
+        background:url(../../img/icon.png)
+        
+    }
+    }
+}
+#g{
+    margin: 0;
+}
