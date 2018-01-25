@@ -364,40 +364,35 @@ img {
   padding: 70px 0 30px 0;
   text-align: center; }
 
+.t4 .ggcs .hr {
+  border-top: 1px solid #d0d0d0; }
+
+.t4 .ggcs .hr2 {
+  border-bottom: 1px solid #d0d0d0; }
+
 .t4 .ggcs .ul1 {
   clear: both; }
   .t4 .ggcs .ul1 .li1 {
+    font-size: 16px;
+    color: #0071bf;
+    vertical-align: top;
     width: 25%;
-    margin-right: 5%; }
+    padding-left: 30px; }
   .t4 .ggcs .ul1 li {
+    padding: 30px;
+    padding-left: 0;
+    padding-right: 30px;
     display: inline-block;
     width: 20%;
-    background: deepskyblue; }
+    height: 100%;
+    vertical-align: top; }
+    .t4 .ggcs .ul1 li h4 {
+      font-size: 14px; }
+    .t4 .ggcs .ul1 li p {
+      font-size: 14px; }
+    .t4 .ggcs .ul1 li .hd {
+      margin-bottom: 55px; }
 
 .t4 .t4-img img {
   display: block;
   width: 100%; }
-
-.t6 {
-  height: 170px;
-  background: #525252; }
-  .t6 .fleft {
-    float: left;
-    padding-top: 35px; }
-    .t6 .fleft a {
-      font-size: 18px;
-      color: #FFFFFF;
-      margin-right: 30px; }
-    .t6 .fleft p {
-      margin-top: 35px;
-      font-size: 14px;
-      color: #cccccc; }
-  .t6 .fright {
-    float: right;
-    padding-top: 35px; }
-    .t6 .fright p {
-      width: 384px;
-      margin-right: 190px;
-      font-size: 16px;
-      color: white;
-      margin-bottom: 15px; }

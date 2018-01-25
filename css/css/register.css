@@ -44,7 +44,8 @@ img {
     background: white;
     padding-left: 60px;
     padding-right: 60px;
-    padding-top: 90px; }
+    padding-top: 90px;
+    margin-bottom: 30px; }
     .r2 .register .zc lable {
       display: inline-block;
       width: 100px;
@@ -70,18 +71,35 @@ img {
       display: block; }
       .r2 .register .zc .zc1 span input {
         display: block; }
-    .r2 .register .zc .zc1 .aq span {
-      margin-left: 130px;
-      margin-bottom: 10px; }
-      .r2 .register .zc .zc1 .aq span input[type=text] {
-        margin-bottom: 25px; }
-    .r2 .register .zc .zc2 {
-      margin-top: 35px; }
-      .r2 .register .zc .zc2 li {
+    .r2 .register .zc .zc1 .aq {
+      vertical-align: top;
+      position: relative; }
+      .r2 .register .zc .zc1 .aq label {
+        vertical-align: middle; }
+      .r2 .register .zc .zc1 .aq span {
+        position: relative;
+        left: 0px;
+        bottom: 15px;
+        vertical-align: top;
+        margin-left: 132px;
         margin-bottom: 10px; }
-      .r2 .register .zc .zc2 input[type=radio] {
+        .r2 .register .zc .zc1 .aq span a {
+          display: none; }
+        .r2 .register .zc .zc1 .aq span input[type=text] {
+          margin-bottom: 25px; }
+    .r2 .register .zc .zc2 {
+      margin-top: 35px;
+      padding-left: 60px; }
+      .r2 .register .zc .zc2 li {
+        margin-bottom: 20px; }
+      .r2 .register .zc .zc2 input[type=checkbox] {
+        width: 20px;
+        height: 20px;
+        background: #fff;
+        border: 1px solid #cccccc;
         display: inline-block;
-        margin-right: 10px; }
+        vertical-align: middle;
+        margin-right: 7px; }
     .r2 .register .zc .zc3 {
       width: 100%;
       display: inline-block;
@@ -97,12 +115,17 @@ img {
         margin-left: 15px; }
 
 .t6 {
+  width: 100%;
+  overflow: hidden;
   height: 118px;
   background: #000000;
   line-height: 160px; }
   .t6 .content {
     margin: 0 auto;
     width: 70%; }
+  .t6 span {
+    display: block;
+    height: 100%; }
   .t6 .t6Left {
     float: left; }
     .t6 .t6Left a {

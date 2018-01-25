@@ -60,7 +60,7 @@
 		<div class="Right">
 			<div class="one">
 				<div class="oLeft">
-					<p>智能手机<span>(5</span>)</p>
+					<p>智能手机<span id="sl"></span></p>
 				</div>
 				<div class="oRight">
 					<p>排序方法</p>
@@ -70,25 +70,7 @@
 				</div>
 			</div>
 			<div class="two">
-				<ul>
-					<li>
-						<div class="shop">
-							<div class="shopImg">
-								<img class="b1" src="img/15059813532522908_293X293.jpg"/>
-								<img class="b2" src="img/15059814391706896_293X293.jpg"/>
-								<img class="b3" src="img/15090131212445710_293X293.jpg"/>
-							</div>
-							<div class="shopJg">
-						<a class="acolor1" href="javascript:void(0);"></a>
-						<a class="acolor2" href="javascript:void(0);"></a>
-						<a class="acolor3" href="javascript:void(0);"></a>
-						<p>盖世乐</p>
-						<p>￥19999,000</p>
-							</div>
-						</div>
-					</li>
-					
-					
+				<ul id="shop">
 					
 				</ul>
 			</div>
@@ -100,7 +82,7 @@
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="js/jquery.terseBanner.min.js"></script>
 <script type="text/javascript">
-	$(".shopImg").click(function(){
+	$(".shop li").click(function(){
 		alert("添加成功")
 		$(".shopImg").css()
 	})
@@ -121,4 +103,23 @@
 	 	$(".b2").css("display","none");
 	 	$(".b3").css("display","block");
 	 })
+	  $(function(){
+	  	$.ajax({
+	  		type:"get",
+	  		url:"getGoodsList.php",
+	  		success:function(data){
+	  			showgoodsList(data);
+	  		},
+	  		dataType:"json"
+	  	});
+	  });
+	  function showgoodsList(datas){
+	  	let shop =  $("#shop");
+	  	for (let i=0;i<datas.length;i++){
+	  		//创建li
+	  		let str ="<li><div class='shop'><div class='shopImg'><img class='b1' src='"+datas[i].goodsImg+"'/><img class='b2' src='"+datas[i].beiyong1+"'/></div><div class='shopJg'><p>"+datas[i].goodsName+"</p><p>"+datas[i].beiyong2+"</p></div></div></li>"
+	  		$("#shop").append(str);
+	  	}
+	  		$("#sl").append("("+datas.length+")");
+	  }
 </script>

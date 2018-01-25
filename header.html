@@ -148,6 +148,38 @@
 		</div>
 	</div>
 </div>
+ <!-- 打开弹窗按钮 -->
+  
+  <!-- 弹窗 -->
+  <div id="myModal" class="modal"> 
+  
+    <!-- 弹窗内容 -->
+    <div class="modal-content"> 
+      <div class="modal-header"> 
+        <span class="close"><img src="img/register/pop_close.gif"/></span> 
+        <h1>登录</h1> 
+        <h2>使用你的三星账户登录</h2>
+      </div> 
+      <div class="modal-body"> 
+        <p>电子邮件或手机</p> 
+        <input id="userId" class="tp" type="text">
+        <span ><span id="ts">
+        	请填写电子邮件或手机！
+        </span></span>
+        <span class="jzmm"><div > <img id="jz"  src="img/popup_check.png"/></div><p>记住我的电子邮件或手机</p></span>
+        <p style="font-size: 18px; color: #000000; font-weight: 100; margin-bottom: 12px; ">密码</p>
+        <input id="userPass" style="width: 100%; height: 35px; border:none; background: #f0f1f1; border-radius: 3px;" class="ps" type="password">
+        <span></span>
+        <p><a href="#" style="margin-top: 17px; margin-right: 5px;">查找你的电子邮件或密码</a><img src="img/popup_login.png"/></p>
+      </div> 
+      <div class="modal-footer"> 
+        <input id="btnReg" style="width: 350px; height: 60px; background: #1428a0; border: 0; color: white; font-size: 20px; font-weight: 900; margin-top: 20px;  margin-bottom: 15px;" class="dl" type="button" value="登录"> 
+        <p style="margin-bottom: 40px;"><span>还不是会员？<a href="#">现在注册</a> <img src="img/popup_login.png"/></span></p>
+      </div> 
+    </div> 
+  
+  </div> 
+
 	</body>
 </html>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
@@ -157,10 +189,11 @@
 	})
 	$(".znSj").mouseenter(function(){
 		$(".zsp1").fadeIn("300");
-		$(".zsp1").css("display","block")
+		$(".zsp1").show();
 	})
 	$(".zsp1").mouseleave(function(){
 		$(".zsp1").css("display","none")
+		
 	})
 	$(".kcSb").mouseenter(function(){
 		$(".zsp2").fadeIn("300");
@@ -190,5 +223,66 @@
 	$(".zsp5").mouseleave(function(){
 		$(".zsp5").css("display","none")
 	})
+	
+		$(function(){		
+		//验证用户名是否存在
+		$("#userId").blur(function(){
+			$.get(
+				"checkUser.php",
+				{
+					"userId":$("#userId").val()	
+				},
+				function(data){
+					if(data=="1"){
+						alert("√");						
+					}else{
+						alert("×");
+					}
+				}				
+			);
+			
+		});
+		
+		$("#btnReg").click(function(){
+			//1、
+			$.post(
+				"addUser01.php",
+				{
+					"userId":$("#userId").val(),
+					"userPass":$("#userPass").val()
+				},
+				function(data){					
+					
+				}
+			);
+		});
+	});
+	
+	   // 获取弹窗 
+    var modal = document.getElementById('myModal'); 
+  
+    // 打开弹窗的按钮对象 
+    var btn = document.getElementById("myBtn"); 
+  
+    // 获取 <span> 元素，用于关闭弹窗 that closes the modal 
+    var span = document.getElementsByClassName("close")[0]; 
+  
+    // 点击按钮打开弹窗 
+    btn.onclick = function() { 
+      modal.style.display = "block"; 
+    } 
+  
+    // 点击 <span> (x), 关闭弹窗 
+    span.onclick = function() { 
+      modal.style.display = "none"; 
+    } 
+    
+    
+    var jz = document.getElementById("jz");
+    
+   jz.onclick =function(){
+   		jz.src="img/popup_ckeks_img.png"
+   }
+	
 	
 </script> 

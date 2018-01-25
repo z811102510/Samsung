@@ -44,30 +44,28 @@
     							</li>
     							<li>
     								<lable>电子邮件ID</lable>
-    								<input type="text" />
+    								<input  id="Email" type="text" />
+    								<span style="display: inline-block; font-size: 15px;"></span>
     							</li>
     							<li>
     								<lable>密码</lable>
-    								<input type="password" />
+    								<input  id="pwd" type="password" />
+    								<span  id="pwd_prompt" style="display: inline-block; font-size: 15px;"></span>
     							</li>
     							<li>
     								<lable>确认密码</lable>
-    								<input type="password" />
+    								<input  id="repwd" type="password" />
+    								<span  id="repwd_prompt" style="display: inline-block; font-size: 15px;">重新输入！</span>
     							</li>
     							<li>
-    								<lable>姓氏</lable>
-    								<input type="text" />
-    							</li>
-    							<li>
-    								<lable>名字</lable>
-    								<input type="text" />
-    							</li>
-    							<li>
-    								<lable>生日</lable>
-    								
-    							</li>
+    								<lable>姓名</lable>
+    								<input   id="name" class="form-group" type="text" />
+    								<span style="display: inline-block; font-size: 15px;">重新输入！</span>
+    							</li>    							
     							<li>
     								<lable>手机号码</lable>
+    								<input id="phone" type="text"   />
+    								<span style="display: inline-block; font-size: 15px;">重新输入！</span>
     							</li>
     							<li class="aq">
     								<lable>安全验证码</lable>
@@ -81,16 +79,16 @@
     					<hr/>
     					<ul class="zc2">
     						<li>
-    							<input type="checkbox"/>我已阅读并同意条款和条件及其他条款。
+    							<input type="checkbox"/>我已阅读并同意条款和条件及其他条款。(可选)
     						</li>
     						<li>
-    							<input type="checkbox"/>我已阅读并同意这些隐私权政策。。
+    							<input type="checkbox"/>我已阅读并同意这些隐私权政策。 (可选)
     						</li>
     						<li>
-    							<input type="checkbox"/>启用个性化服务。 (可选)。
+    							<input type="checkbox"/>启用个性化服务。 (可选)
     						</li>
     						<li>
-    							<input type="checkbox"/>本人认真阅读个人信息提供给第三方条款并同意此条款。  (可选)。
+    							<input type="checkbox"/>本人认真阅读个人信息提供给第三方条款并同意此条款。  (可选)
     						</li>
     					</ul>
     					
@@ -120,9 +118,10 @@
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="js/verify.min.js" ></script>
 	<script type="text/javascript">
+		
 		$('#mpanel2').codeVerify({
 			type : 1,
-			width : '400px',
+			width : '300px',
 			height : '50px',
 			fontSize : '30px',
 			codeLength : 6,
@@ -137,6 +136,25 @@
 			}
 		});
 		
-		
-		
+		function checkPwd(){
+       $("#pwd_prompt").innerHTML="";
+      var reg = /^[a-zA-Z0-9]{4,10}$/;
+      if(reg.test($("#pwd"))==false){
+        $("#pwd_prompt").html("密码不能含有非法字符，长度在4-10之间");
+        return false;
+      }
+      return true;
+    }
+     function checkRepwd(){
+       var repwd = $("repwd");
+       var pwd = $("pwd");
+       var repwdId = divId("repwd_prompt");
+        repwdId.innerHTML=""
+       if(pwd!=repwd){
+         repwdId.innerHTML="两次密码不一致";
+         return false;
+       }
+       return true;
+     }
+			
 	</script>
