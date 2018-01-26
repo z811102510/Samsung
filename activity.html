@@ -7,6 +7,9 @@
 <link rel="stylesheet" type="text/css" href="css/css/iconfont.css"/>
 </head>
 <body>
+	<div id="t1">
+		
+	</div>
 <div class="t3">
 	<div class="c1">
 		<img src="img/activity/bg/img-1-b (2).jpg"/>
@@ -64,11 +67,18 @@
 		<img src="img/activity/bg/img-9-b.jpg"/>
 		<img class="d3" src="img/activity/word/img-9-b.png"/>
 	</div>
+	<div id="t6">
+		
+	</div>
 </body>
 </html>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="js/jquery.terseBanner.min.js"></script>
 <script type="text/javascript">
+	$(function(){
+		$('#t1').load('header.html');
+		$("#t6").load('fotter.html');
+	})
 	 $(".footicon").hover(function(){
 	 	$(".footicon i").css("background","#1D7DB1");
 	 	$(".footicon i").css("border-radius","50%");

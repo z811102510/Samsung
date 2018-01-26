@@ -7,6 +7,7 @@
 <link rel="stylesheet" type="text/css" href="css/css/iconfont.css"/>
 </head>
 <body>
+<div id="t1"></div>
 <!--
 	作者：811102510@qq.com
 	时间：2018-01-17
@@ -212,6 +213,8 @@
 		</div>
 	</div>
 </div>
+<div id="t6">
+</div>
 
 </body>
 </html>
@@ -220,20 +223,54 @@
 <script type="text/javascript">
 	 $('.banner').terseBanner();
 	 $('.lb2').terseBanner();
-	  $(".znSj").mouseover(function(){
-	  	$(".zsp1").css("display","block")
-	  })
-	   $(".kcSb").mouseover(function(){
-	  	$(".zsp2").css("display","block")
-	  })
-	    $(".grPc").mouseover(function(){
-	  	$(".zsp3").css("display","block")
-	  })
-	 $(".t2").mouseout(function(){ 
-	 	$(".zsp1").css("display","none");
-	 	$(".zsp2").css("display","none");
-	 	$(".zsp3").css("display","none");
-  })
+	 $(".jrsq").click(function(){
+		alert("请使用Ctrl+D")
+	})
+	 $(function(){
+	 	
+		$('#t1').load('header.html');
+		$("#t6").load('fotter.html');
+	 })
+	 
+	  $("#d2").click(function(){
+		$("#ttt").css({"display":"none","cursor":"pointer"});
+	})
+	$(".znSj").mouseenter(function(){
+		$(".zsp1").fadeIn("300");
+		$(".zsp1").show();
+	})
+	$(".zsp1").mouseleave(function(){
+		$(".zsp1").css("display","none")
+		
+	})
+	$(".kcSb").mouseenter(function(){
+		$(".zsp2").fadeIn("300");
+		$(".zsp2").css("display","block")
+	})
+	$(".zsp2").mouseleave(function(){
+		$(".zsp2").css("display","none")
+	})
+	$(".grPc").mouseenter(function(){
+		$(".zsp3").fadeIn("300");
+		$(".zsp3").css("display","block")
+	})
+	$(".zsp3").mouseleave(function(){
+		$(".zsp3").css("display","none")
+	})
+	$(".kqJh").mouseenter(function(){
+		$(".zsp4").fadeIn("300");
+		$(".zsp4").css("display","block")
+	})
+	$(".zsp4").mouseleave(function(){
+		$(".zsp4").css("display","none")
+	})
+	$(".Pj").mouseenter(function(){
+		$(".zsp5").fadeIn("300");
+		$(".zsp5").css("display","block")
+	})
+	$(".zsp5").mouseleave(function(){
+		$(".zsp5").css("display","none")
+	})
 	  // 获取弹窗 
     var modal = document.getElementById('myModal'); 
   

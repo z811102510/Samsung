@@ -51,7 +51,7 @@ img {
   float: right; }
 
 .ttt {
-  display: none;
+  display: block;
   /* 默认隐藏 */
   position: fixed;
   z-index: 1;
@@ -105,7 +105,10 @@ img {
   cursor: pointer; }
 
 .t2 {
-  position: relative;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
   background: url(../../img/register/bg_top.gif) repeat-x;
   /* .modal{
         display: block;
@@ -162,9 +165,9 @@ img {
     height: 200px;
     background: #fff;
     border-top: 1px solid #eee;
-    position: absolute;
+    position: fixed;
     top: 64px;
-    z-index: 1; }
+    z-index: 999; }
   .t2 .zsp1 {
     display: none; }
   .t2 .zsp2 {
@@ -290,10 +293,10 @@ img {
   margin: 0; }
 
 .modal {
-  display: block;
+  display: none;
   /* 默认隐藏 */
   position: fixed;
-  z-index: 1;
+  z-index: 999;
   padding-top: 5%;
   padding-bottom: 5%;
   left: 0;

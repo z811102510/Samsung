@@ -15,7 +15,13 @@ a {
 img {
   border: none; }
 
+.content {
+  margin-left: 8%;
+  margin-right: 8%; }
+
 .banner {
+  padding-top: 65px;
+  overflow: hidden;
   width: 100%;
   height: 400px; }
 
@@ -207,26 +213,110 @@ img {
   .t5 .w {
     position: relative; }
     .t5 .w .w1 {
+      color: #333;
       display: inline-block;
-      margin-top: 55px;
-      margin-right: 230px; }
+      margin-top: 50px;
+      margin-bottom: 30px;
+      margin-right: 200px; }
+      .t5 .w .w1 i {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background: url(../../img/icon.png);
+        background-position: 0 0;
+        margin-left: 5px; }
       .t5 .w .w1 li {
-        margin-bottom: 15px; }
+        margin-bottom: 10px; }
       .t5 .w .w1 .b {
-        font-weight: bold; }
+        margin-bottom: 25px;
+        font-weight: 900; }
     .t5 .w a {
       color: #333333; }
   .t5 .ft {
     margin-top: 20px;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    color: #333; }
   .t5 .foot1 {
-    position: absolute;
-    right: 43px;
-    top: 30px; }
+    float: right;
+    margin-top: 25px;
+    margin-right: 158px; }
     .t5 .foot1 i {
-      display: inline-block;
-      margin-right: 10px;
-      font-size: 30px; }
-    .t5 .foot1 p {
       margin-top: 20px;
-      margin-bottom: 20px; }
+      display: inline-block;
+      background: url(../../img/icon-common.png); }
+    .t5 .foot1 .footicon i {
+      width: 50px;
+      height: 50px; }
+    .t5 .foot1 .footicon .weibo {
+      background-position: -1100px -1300px; }
+    .t5 .foot1 .footicon .weibo:hover {
+      background-position: -1150px -1300px; }
+    .t5 .foot1 .footicon .iweixin {
+      background-position: -1195px -1300px; }
+    .t5 .foot1 .footicon .iweixin:hover {
+      background-position: -1245px -1300px; }
+    .t5 .foot1 .footicon .tengxunweibo1 {
+      background-position: -1290px -1300px; }
+    .t5 .foot1 .footicon .tengxunweibo1:hover {
+      background-position: -1340px -1300px; }
+    .t5 .foot1 p {
+      font-weight: 900; }
+  .t5 .slss {
+    display: block; }
+    .t5 .slss .gls {
+      width: 150px;
+      height: 50px;
+      background-position: -1490px -1356px; }
+    .t5 .slss .gls:hover {
+      background-position: -1490px -1356px; }
+
+.t6 {
+  height: 170px;
+  background: #525252; }
+  .t6 .content {
+    margin: 0 8%; }
+  .t6 .fleft {
+    float: left;
+    padding-top: 35px; }
+    .t6 .fleft a {
+      font-size: 18px;
+      color: #FFFFFF;
+      margin-right: 30px; }
+    .t6 .fleft p {
+      margin-top: 35px;
+      font-size: 14px;
+      color: #cccccc; }
+  .t6 .fright {
+    float: right;
+    padding-top: 35px;
+    vertical-align: text-top; }
+    .t6 .fright p {
+      width: 345px;
+      margin-right: 190px;
+      color: white;
+      margin-bottom: 15px;
+      font-weight: 100;
+      font-size: 15px; }
+    .t6 .fright i {
+      display: inline-block;
+      background: url(../../img/icon-common.png); }
+    .t6 .fright .p1 {
+      width: 100%; }
+      .t6 .fright .p1 a {
+        color: white;
+        display: inline-block; }
+        .t6 .fright .p1 a .icp1 {
+          width: 113px;
+          height: 20px;
+          background: url(../../img/lz1.gif);
+          background-size: 100%;
+          vertical-align: middle;
+          margin-left: 5px; }
+        .t6 .fright .p1 a .icp2 {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          vertical-align: middle;
+          background: url(../../img/hu-beian.png);
+          background-size: 100%;
+          margin: 0 10px; }

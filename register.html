@@ -5,6 +5,8 @@
 <title>Create&nbsp;a&nbsp;三星&nbsp;account</title>
 <link rel="stylesheet" type="text/css" href="css/css/register.css"/>
 <link rel="stylesheet" href="css/css/verify.css" />
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/verify.min.js" ></script>
 </head>
 <body>
 	<!--
@@ -36,16 +38,11 @@
     								<img src="img/register/ico_bmon.png"/>
     								<img src="img/register/ico_bem2on.png"/>
     								<p>电子邮件地址</p>
-    								<span>
-    								<img src="img/register/ico_bm.png"/>
-    								<img src="img/register/ico_bem3.png"/>
-    								<p>手机号码</p>
-    								</span>
     							</li>
     							<li>
     								<lable>电子邮件ID</lable>
     								<input  id="Email" type="text" />
-    								<span style="display: inline-block; font-size: 15px;"></span>
+    								<span  id="email_prompt" style="display: inline-block; font-size: 15px;"></span>
     							</li>
     							<li>
     								<lable>密码</lable>
@@ -55,17 +52,17 @@
     							<li>
     								<lable>确认密码</lable>
     								<input  id="repwd" type="password" />
-    								<span  id="repwd_prompt" style="display: inline-block; font-size: 15px;">重新输入！</span>
+    								<span  id="repwd_prompt" style="display: inline-block; font-size: 15px;"></span>
     							</li>
     							<li>
     								<lable>姓名</lable>
     								<input   id="name" class="form-group" type="text" />
-    								<span style="display: inline-block; font-size: 15px;">重新输入！</span>
+    								<span id="name_prompt"	style="display: inline-block; font-size: 15px;"></span>
     							</li>    							
     							<li>
     								<lable>手机号码</lable>
     								<input id="phone" type="text"   />
-    								<span style="display: inline-block; font-size: 15px;">重新输入！</span>
+    								<span id="phone_prompt" style="display: inline-block; font-size: 15px;"></span>
     							</li>
     							<li class="aq">
     								<lable>安全验证码</lable>
@@ -115,8 +112,6 @@
 </div>  
 </body>
 </html>
-<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="js/verify.min.js" ></script>
 	<script type="text/javascript">
 		
 		$('#mpanel2').codeVerify({
@@ -135,26 +130,87 @@
 				alert('验证码不匹配！');
 			}
 		});
-		
-		function checkPwd(){
-       $("#pwd_prompt").innerHTML="";
-      var reg = /^[a-zA-Z0-9]{4,10}$/;
-      if(reg.test($("#pwd"))==false){
-        $("#pwd_prompt").html("密码不能含有非法字符，长度在4-10之间");
-        return false;
-      }
-      return true;
-    }
-     function checkRepwd(){
-       var repwd = $("repwd");
-       var pwd = $("pwd");
-       var repwdId = divId("repwd_prompt");
-        repwdId.innerHTML=""
-       if(pwd!=repwd){
-         repwdId.innerHTML="两次密码不一致";
-         return false;
-       }
-       return true;
-     }
+		$(function(){
+			$("#Email"). blur(function(){
+				checkAllAndUi("email",$("#Email").val(),$("#email_prompt"));
+			});
+			$("#phone"). blur(function(){
+				checkAllAndUi("tell",$("#phone").val(),$("#phone_prompt"));
+			});
+			$("#pwd"). blur(function(){
+				checkAllAndUi("password",$("#pwd").val(),$("#pwd_prompt"));
+			});
+			$("#name"). blur(function(){
+				checkAllAndUi("name",$("#name").val(),$("#name_prompt"));
+			});
+		});
+			$("#repwd"). blur(function(){
+					if($("#pwd").val==$("#repwd").val){
+									
+					}else{
+							$("repwd_prompt").css({"color":"darkred","font-size":"14px"})
+							$("repwd_prompt").html("输入错误")
+						};
+					});
+	
 			
-	</script>
+function checkAll(type,str){
+	switch(type){
+		case "username": var reg=/\w{5,8}/;break;
+		case "email": var reg=/^\w+@\w+\.(com|cn)$/;break;
+		case "password": var reg=/\w{8,16}/;break;
+		case "tell": var reg=/^1+\d{10}/;break;
+		case "name": var reg=/u4e00-\u9fa5/; break;
+	}
+	if(reg){
+		return reg.test(str);
+	}else{
+		return false;
+	}
+}
+function checkAllAndUi(type,str,domObj){
+	
+	if(checkAll(type,str)){
+		domObj.html()
+	}else{
+		domObj.css({"color":"darkred","font-size":"14px"})
+		domObj.html("输入错误")
+	}
+}
+
+$(function(){		
+		//验证用户名是否存在
+		$("#Email").blur(function(){
+			$.ajax({
+				url:"checkUser.php",
+				method:"get",
+				data:{"userId":$("#Email").val()},
+				success:function (data){
+					if(data=="1"){
+						$("#email_prompt").html("可以注册");						
+					}else if(data=='0'){
+						$("#email_prompt").html("账号存在");
+					}
+				}
+			});
+		});
+				
+		
+		$("#check-btn").click(function(){
+			//1、
+			$.post(
+				"addUser01.php",
+				{
+					"userId":$("#Email").val(),
+					"userPass":$("#pwd").val(),
+					"tell":$("#phone").val(),
+					"name":$("#name").val()
+				},
+				function(data){					
+					
+				}
+			);
+		});
+	});
+
+</script>

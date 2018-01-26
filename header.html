@@ -224,40 +224,7 @@
 		$(".zsp5").css("display","none")
 	})
 	
-		$(function(){		
-		//验证用户名是否存在
-		$("#userId").blur(function(){
-			$.get(
-				"checkUser.php",
-				{
-					"userId":$("#userId").val()	
-				},
-				function(data){
-					if(data=="1"){
-						alert("√");						
-					}else{
-						alert("×");
-					}
-				}				
-			);
-			
-		});
-		
-		$("#btnReg").click(function(){
-			//1、
-			$.post(
-				"addUser01.php",
-				{
-					"userId":$("#userId").val(),
-					"userPass":$("#userPass").val()
-				},
-				function(data){					
-					
-				}
-			);
-		});
-	});
-	
+
 	   // 获取弹窗 
     var modal = document.getElementById('myModal'); 
   

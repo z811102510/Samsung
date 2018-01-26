@@ -58,7 +58,7 @@ img{
     float: right;
 }
 .ttt { 
-      display: none; /* 默认隐藏 */ 
+      display: block; /* 默认隐藏 */ 
       position: fixed; 
       z-index: 1; 
       padding-top: 100px; 
@@ -110,7 +110,10 @@ img{
     
     
 .t2{
-    position: relative;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
     background: url(../../img/register/bg_top.gif) repeat-x;
     
    /* .modal{
@@ -168,9 +171,9 @@ img{
        height: 200px; 
        background: #fff; 
        border-top:1px solid #eee ;
-       position: absolute; 
+       position:fixed; 
        top: 64px;
-       z-index: 1;
+       z-index: 999;
       
       }
       .zsp1{
@@ -347,10 +350,9 @@ img{
 }
 
 .modal { 
-      display: block; /* 默认隐藏 */ 
+      display: none; /* 默认隐藏 */ 
       position: fixed; 
-      z-index: 1; 
-      
+      z-index: 999;
       padding-top: 5%; 
       padding-bottom: 5%; 
       left: 0; 
